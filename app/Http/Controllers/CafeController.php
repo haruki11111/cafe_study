@@ -99,7 +99,7 @@ class CafeController extends Controller
             'wifi' => 'boolean',
             'power_supply' => 'boolean',
             'quiet_level' => 'required|integer|min:1|max:5',
-            'rating' => 'nullable|integer|min:1|max:5',
+            'rating' => 'required|integer|min:1|max:5',
             'memo' => 'nullable|string|max:1000',
         ]);
         Cafe::create($validated);
@@ -143,7 +143,7 @@ class CafeController extends Controller
             'wifi' => 'boolean',
             'power_supply' => 'boolean',
             'quiet_level' => 'required|integer|min:1|max:5',
-            'rating' => 'nullable|integer|min:1|max:5',
+            'rating' => 'required|integer|min:1|max:5',
             'memo' => 'nullable|string|max:1000',
         ]);
         $cafe->update($validated);
