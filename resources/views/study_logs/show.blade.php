@@ -30,7 +30,7 @@
 
             <tr>
                 <th class="border p-2 bg-gray-100">勉強内容</th>
-                <td class="border p-2">{{ $studyLog->memo }}</td>
+                <td class="border p-2">{!! nl2br(e($studyLog->memo)) !!}</td>
             </tr>
 
         </table>

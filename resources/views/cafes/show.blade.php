@@ -54,7 +54,7 @@
             <tr>
                 <th class="border p-2 bg-gray-100">メモ</th>
                 <td class="border p-2">
-                    {{ $cafe->memo }}
+                    {!! nl2br($cafe->memo) !!}
                 </td>
             </tr>
 
